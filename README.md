@@ -9,6 +9,10 @@ This script administers:
 - HTTPS using [certbot](https://certbot.eff.org/) provided by [Let's Encrypt](https://letsencrypt.org/).
 - Enables Fathom has a service using [systemd](https://en.wikipedia.org/wiki/Systemd).
 
+## Requirements
+
+- sqlite3 (`sudo apt-get install sqlite3`)
+
 ## Usage
 
 ```bash

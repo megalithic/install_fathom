@@ -45,7 +45,7 @@ server {
 		proxy_set_header X-Real-IP \$remote_addr;
 		proxy_set_header X-Forwarded-For \$remote_addr;
 		proxy_set_header Host \$host;
-		proxy_pass http://127.0.0.1:9000; 
+		proxy_pass http://127.0.0.1:9000;
 	}
 }
 EOL
@@ -64,7 +64,7 @@ After=network.target
 
 [Service]
 Type=simple
-User="$USER"
+User=$USER
 Restart=always
 RestartSec=3
 ExecStart=/usr/local/bin/fathom --config=/opt/fathom/fathom.env server
